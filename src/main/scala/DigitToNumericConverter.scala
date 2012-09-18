@@ -26,8 +26,8 @@ class DigitToNumericConverter {
   mapping.put(EIGHT, "8")
   mapping.put(NINE, "9")
 
-  def makeNumeral(s: String): Option[String] = {
-    val thisDigit = mapping.get(s)
+  def makeNumeral(s: String): String = {
+    val thisDigit = mapping(s)
     thisDigit
   }
 }
